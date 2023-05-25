@@ -6,7 +6,7 @@
     'description': 'This custom module was developed for Next Chapter Manufacturing to enable tracking of on-time deliveries.',
     'author': 'Hayden McCarthy',
     'website': 'https://www.nxcmfg.com',
-    'license': 'LPGL-3'
+    'license': 'LPGL-3',
     'depends': ['stock'],
     'data': [
         'views/view_nxc_on_time_delivery_transfer_form.xml',
