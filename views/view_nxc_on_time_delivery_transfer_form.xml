@@ -3,7 +3,7 @@
   <data>
     <record id="view_nxc_on_time_delivery_transfer_form" model="ir.ui.view">
       <field name="name">nxc.inventory.on.time.delivery.form</field>
-      <field name="model">nxc.on.time.delivery</field>
+      <field name="model">stock.picking</field>
       <field name="inherit_id">stock.view_picking_form</field>
       <field name="arch" type="xml">
       <xpath expr="//field[@name='owner_id']" position="after">
