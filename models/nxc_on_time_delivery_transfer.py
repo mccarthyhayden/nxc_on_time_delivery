@@ -4,7 +4,7 @@ class NxcOnTimeDeliveryTransfer(models.Model):
     _inherit = 'stock.picking'
     
     #On-Time Delivery Field
-    completed_on_time = fields.Boolean(string="Completed On Time" compute="_compute_on_time", readonly=True)
+    completed_on_time = fields.Boolean(string="Completed On Time", compute="_compute_on_time", readonly=True)
 
     # Calculate the value of the on-time delivery field".
     @api.onchange('date_deadline', 'date_done')
