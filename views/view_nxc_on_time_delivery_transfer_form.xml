@@ -4,7 +4,7 @@
     <record id="view_nxc_on_time_delivery_transfer_form" model="ir.ui.view">
       <field name="name">nxc.inventory.on.time.delivery.form</field>
       <field name="model">stock.picking</field>
-      <field name="inherit_id">stock.view_picking_form</field>
+      <field name="inherit_id">view_picking_form</field>
       <field name="arch" type="xml">
         <xpath expr="//field[@name='owner_id']" position="after">
           <field name="completed_on_time" widget="boolean_toggle" attrs="{'invisible': [['picking_type_code', '!=', 'outgoing']]}"/>
