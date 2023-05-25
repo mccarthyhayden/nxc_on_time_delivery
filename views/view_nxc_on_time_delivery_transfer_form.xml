@@ -6,9 +6,10 @@
       <field name="model">stock.picking</field>
       <field name="inherit_id">stock.view_picking_form</field>
       <field name="arch" type="xml">
-      <xpath expr="//field[@name='owner_id']" position="after">
-        <field name="completed_on_time" widget="boolean_toggle" attrs="{'invisible': [['picking_type_code', '!=', 'outgoing']]}"/>
-      </xpath>
+        <xpath expr="//field[@name='owner_id']" position="after">
+          <field name="completed_on_time" widget="boolean_toggle" attrs="{'invisible': [['picking_type_code', '!=', 'outgoing']]}"/>
+        </xpath>
+      </field>
     </record>
   </data>
 </odoo>
